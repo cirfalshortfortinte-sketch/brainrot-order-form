@@ -1837,13 +1837,16 @@ document.addEventListener('DOMContentLoaded', function () {
       setTimeout(() => createFirework(window.innerWidth / 2, window.innerHeight / 3), 900);
 
       // Reset and close after 5 seconds
-      setTimeout(() => {
-        closeOrderForm();
-        cart = [];
-        updateCart();
-        form.reset();
-        formSections.forEach(section => section.style.display = '';
-      }, 5000);
+setTimeout(() => {
+  closeOrderForm();
+  cart = [];
+  updateCart();
+  form.reset();
+  formSections.forEach(section => {
+    section.style.display = '';
+  });
+}, 5000);
+
     });
   }
 });
