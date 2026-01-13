@@ -1528,8 +1528,8 @@ const defaultConfig = {
   footer_text: "By Simba_jsp"
 };
 
-// ✅ URL de ton backend Render
-const BACKEND_URL = "https://backend-aisz.onrender.com";
+// ✅ URL de ton backend Render (corrigée)
+const BACKEND_URL = "https://backend-ajsz.onrender.com";
 
 let cart = [];
 let isDarkMode = false;
@@ -1842,7 +1842,7 @@ document.addEventListener('DOMContentLoaded', function () {
         cart = [];
         updateCart();
         form.reset();
-        formSections.forEach(section => section.style.display = '');
+        formSections.forEach(section => section.style.display = '';
       }, 5000);
     });
   }
